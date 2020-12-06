@@ -70,3 +70,17 @@ dat4 %>%
     pairwise_t_test(value~sample)
 
 # Can't reject the null hypothesis
+
+
+dat5 <- data.frame(
+    before = c(9, 8, 1, 3, 2),
+    after = c(16, 11, 15, 12, 9)
+)
+dat5 %>%
+    pivot_longer(before:after, names_to = "sample", values_to = "value") %>%
+    # ggplot(aes(sample, value)) +
+    # geom_boxplot() %>% 
+    pairwise_t_test(value~sample, paired = T)
+
+
+# End of script
