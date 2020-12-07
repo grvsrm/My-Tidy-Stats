@@ -4,5 +4,3 @@ library(rstatix)
 library(car)
 library(here)
 library(easystats)
-
-
