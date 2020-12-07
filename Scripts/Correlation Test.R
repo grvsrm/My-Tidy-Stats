@@ -22,4 +22,4 @@ mtcars %>%
     correlation::correlation()
 
 
-# End os script
+# End of script
